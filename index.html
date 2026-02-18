@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Book Manager</h1>
+
+<!-- Add Book Form -->
+<form id="add-book-form">
+  <input type="text" id="title" placeholder="Book Title" required minlength="3" maxlength="100">
+  <input type="text" id="author" placeholder="Author" required minlength="3" maxlength="100">
+  <input type="text" id="publisher" placeholder="Publisher" required minlength="3" maxlength="100">
+  <input type="url" id="image_url" placeholder="Cover Image URL" required>
+  <button type="submit">Add Book</button>
+</form>
+
+<!-- Search Form -->
+<form id="search-form">
+  <input type="text" id="search-query" placeholder="Search books..." required minlength="3" maxlength="100">
+  <div class="search-controls">
+    <input type="number" id="page" placeholder="Page" value="1" min="1">
+    <input type="number" id="size" placeholder="Size" value="3" min="1">
+    <button type="submit">Search</button>
+  </div>
+</form>
+
+<!-- Results -->
+<div class="books-container" id="books-container"></div>
+
+<!-- Pagination Controls -->
+<div class="pagination" id="pagination"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

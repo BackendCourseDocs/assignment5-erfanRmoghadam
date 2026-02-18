@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Virtual Environment
+venv/
+.env/
+.venv/
+.env
+
+# VSCode settings
+.vscode/
+
+# Local database
+books.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Build / cache
+dist/
+build/
+*.egg-info/
